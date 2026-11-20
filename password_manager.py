@@ -26,8 +26,8 @@ def add():
     name = input("Please enter your account name: ")
     pwd = input("Please enter your account password: ")
 
-    with open("passwords.txt","a") as file:
-        file.write(name+"|"+ fer.encrypt(pwd.encode()).decode() +"\n")
+    with open("passwords.txt","a") as add_file:
+        add_file.write(name+"|"+ fer.encrypt(pwd.encode()).decode() +"\n")
 
 if not os.path.exists("key.key"):
     write_key()
