@@ -64,6 +64,23 @@ python3 rock_paper_scissors.py
 - Track wins and losses as you play
 - Final score displayed on exit
 
+### 5. Pig Dice Multi-Player Game (`pig_dice_multi_player_game.py`)
+A classic multiplayer dice game where players take turns rolling a die to accumulate points, but rolling a 1 loses all points for that turn. First player to reach 50 points wins.
+
+**How to play:**
+```bash
+python3 pig_dice_multi_player_game.py
+```
+- Enter number of players (2-4)
+- On your turn, choose to **roll** (y) or **hold** (n)
+- Rolling: Gain the die value added to your turn score
+  - Roll a **1**: Lose all turn points, turn ends immediately
+  - Roll 2-6: Points added to turn total; choose to roll again or hold
+- Holding: Add turn score to your total, pass to next player
+- Game ends when a player reaches 50 points
+- Leaderboard shown after each turn
+- Winner(s) announced at end (handles ties)
+
 ## Requirements
 
 Python 3.x required for all projects.
